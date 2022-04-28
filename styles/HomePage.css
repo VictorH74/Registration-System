@@ -1,0 +1,43 @@
+.home-page{
+    padding: 10px;
+    color: #4286d3;
+}
+
+.home-page h1{
+    font-size: 3rem;
+    opacity: 0;
+    animation-delay: 2s;
+    animation: showh1 1s both ease-in-out;
+}
+
+.home-page h2{
+    font-size: 2rem;
+    animation-delay: 4s;
+    animation: showh2 1s both ease-in-out;
+    
+}
+
+.intant{
+    position: absolute;
+    bottom: 10px;
+}
+
+@keyframes showh1 {
+    from{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes showh2 {
+    from{
+        transform: translateX(-300%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
